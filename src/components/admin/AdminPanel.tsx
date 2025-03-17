@@ -100,7 +100,7 @@ const AdminPanel: React.FC = () => {
   
   const getBlockName = (blockId: number) => {
     const block = blocks.find(b => b.id === blockId);
-    return block ? `Bloco #${block.id}` : `Bloco #${blockId}`;
+    return block ? `Bloco ${block.id}` : `Bloco ${blockId}`;
   };
   
   const isBlockInMatch = (blockId: number) => {
@@ -122,8 +122,8 @@ const AdminPanel: React.FC = () => {
     const team2Block = blocks.find(b => b.id === match.team2BlockId);
     
     return {
-      team1: team1Block ? `Bloco #${team1Block.id}` : 'Equipe 1',
-      team2: team2Block ? `Bloco #${team2Block.id}` : 'Equipe 2',
+      team1: team1Block ? `Bloco ${team1Block.id}` : 'Equipe 1',
+      team2: team2Block ? `Bloco ${team2Block.id}` : 'Equipe 2',
     };
   };
 

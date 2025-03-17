@@ -104,7 +104,7 @@ const History: React.FC = () => {
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
                   <div>
                     <h2 className="text-lg font-medium">
-                      Partida #{match.id} - Bloco #{match.team1BlockId} vs Bloco #{match.team2BlockId}
+                      Partida {match.id} - Bloco {match.team1BlockId} vs Bloco {match.team2BlockId}
                     </h2>
                     
                     <div className="flex flex-wrap gap-x-6 gap-y-2 mt-2">

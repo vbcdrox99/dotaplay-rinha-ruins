@@ -61,7 +61,7 @@ const MATCH_DURATION = 60 * 60; // 1 hora em segundos
 
 const generateBlocks = (players: Player[]): Block[] => {
   const blocks: Block[] = [];
-  let blockCounter = 0;
+  let blockCounter = 1;
   
   for (let i = 0; i < players.length; i += BLOCK_SIZE) {
     const blockPlayers = players.slice(i, i + BLOCK_SIZE);

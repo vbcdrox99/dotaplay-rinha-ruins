@@ -84,7 +84,7 @@ const QueueDisplay: React.FC<QueueDisplayProps> = ({ adminMode = false }) => {
     createMatch(selectedBlocks[0], selectedBlocks[1]);
     setSelectedBlocks([]);
     
-    toast.success(`Partida iniciada entre Bloco #${selectedBlocks[0]} e Bloco #${selectedBlocks[1]}`);
+    toast.success(`Partida iniciada entre Bloco ${selectedBlocks[0]} e Bloco ${selectedBlocks[1]}`);
     
     const audio = new Audio('/match-start.mp3');
     audio.play().catch(e => console.error("Erro ao reproduzir som:", e));

@@ -46,7 +46,7 @@ const PlayerBlock: React.FC<PlayerBlockProps> = ({
       onClick={selectable ? onClick : undefined}
     >
       <div className="flex justify-between items-center mb-3">
-        <h4 className="font-medium text-lg">Bloco #{blockId}</h4>
+        <h4 className="font-medium text-lg">Bloco {blockId}</h4>
         <div className="flex items-center gap-2">
           <Badge variant={block.isComplete ? "secondary" : "outline"} className={block.isComplete ? "bg-green-700 text-white" : ""}>
             {block.isComplete ? "Completo" : `${block.players.length}/5`}
